@@ -25,23 +25,23 @@
 - extern
 
 ## Operators
----------------+------------------------------------+---------------
-Postfix        | () [] -> . ++ --                   | Left to right
-Unary          | + - ! ~ ++ -- (type)* & sizeof     | Right to left
-Multiplicative | * / %                              | Left to right
-Additive       | + -                                | Left to right
-Shift          | << >>                              | Left to right
-Relational     | < <= > >=                          | Left to right
-Equality       | == !=                              | Left to right
-Bitwise AND    | &                                  | Left to right
-Bitwise XOR    | ^                                  | Left to right
-Bitwise OR     | |                                  | Left to right
-Logical AND    | &&                                 | Left to right
-Logical OR     | ||                                 | Left to right
-Conditional    | ?:                                 | Right to left
-Assignment     | = += -= *= /= %=>>= <<= &= ^= |=   | Right to left
-Comma          | ,                                  | Left to right
----------------+------------------------------------+---------------
+Category       |Operator                              |Associativity
+---------------|:------------------------------------:|:--------------
+Postfix        | `() [] -> . ++ --                 `  | Left to right
+Unary          | `+ - ! ~ ++ -- (type)* & sizeof   `  | Right to left
+Multiplicative | `* / %                            `  | Left to right
+Additive       | `+ -                              `  | Left to right
+Shift          | `<< >>                            `  | Left to right
+Relational     | `< <= > >=                        `  | Left to right
+Equality       | `== !=                            `  | Left to right
+Bitwise AND    | `&                                `  | Left to right
+Bitwise XOR    | `^                                `  | Left to right
+Bitwise OR     | `\|                               `  | Left to right
+Logical AND    | `&&                               `  | Left to right
+Logical OR     | `\|\|                             `  | Left to right
+Conditional    | `?:                               `  | Right to left
+Assignment     | `= += -= *= /= %=>>= <<= &= ^= \|=`  | Right to left
+Comma          | `,                                `  | Left to right
 
 ## Decision Making
 - if ...
@@ -114,11 +114,6 @@ struct {
 
 ## Input and Output
 - The Standard Files
----------------+--------+----------
-Standard input | stdin  | Keyboard
-Standard output| stdout | Screen
-Standard error | stderr | Your screen
----------------+--------+----------
 
 ## File I/O
 - Opening Files
@@ -136,7 +131,8 @@ Standard error | stderr | Your screen
 	size_t fwrite(const void *ptr, size_t size_of_elements, size_t number_of_elements, FILE *a_file);
 
 ## Preprocessors
---------------+---------------------------------------------------------------------
+Directive     |Description
+--------------|---------------------------------------------------------------------
 `#define`     |Substitutes a preprocessor macro.
 `#include`    |Inserts a particular header from another file.
 `#undef`      |Undefines a preprocessor macro.
@@ -148,16 +144,15 @@ Standard error | stderr | Your screen
 `#endif`      |Ends preprocessor conditional.
 `#error`      |Prints error message on stderr.
 `#pragma`     |Issues special commands to the compiler, using a standardized method.
---------------+---------------------------------------------------------------------
 
 - Predefined Macros
------------+-----------------------------------------------------------------
-`__DATE__` |The current date as a character literal in "MMM DD YYYY" format.
-`__TIME__` |The current time as a character literal in "HH:MM:SS" format.
-`__FILE__` |This contains the current filename as a string literal.
-`__LINE__` |This contains the current line number as a decimal constant.
-`__STDC__` |Defined as 1 when the compiler complies with the ANSI standard.
------------+-----------------------------------------------------------------
+Macro         |Description
+--------------|-----------------------------------------------------------------
+`__DATE__`    |The current date as a character literal in "MMM DD YYYY" format.
+`__TIME__`    |The current time as a character literal in "HH:MM:SS" format.
+`__FILE__`    |This contains the current filename as a string literal.
+`__LINE__`    |This contains the current line number as a decimal constant.
+`__STDC__`    |Defined as 1 when the compiler complies with the ANSI standard.
 
 - Preprocessor Operators
 	The Macro Continuation (\) Operator
