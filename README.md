@@ -25,6 +25,7 @@
 - extern
 
 ## Operators
+
 Category       |Operator                              |Associativity
 ---------------|:------------------------------------:|:--------------
 Postfix        | `() [] -> . ++ --                 `  | Left to right
@@ -131,6 +132,7 @@ struct {
 	size_t fwrite(const void *ptr, size_t size_of_elements, size_t number_of_elements, FILE *a_file);
 
 ## Preprocessors
+
 Directive     |Description
 --------------|---------------------------------------------------------------------
 `#define`     |Substitutes a preprocessor macro.
@@ -146,6 +148,7 @@ Directive     |Description
 `#pragma`     |Issues special commands to the compiler, using a standardized method.
 
 - Predefined Macros
+
 Macro         |Description
 --------------|-----------------------------------------------------------------
 `__DATE__`    |The current date as a character literal in "MMM DD YYYY" format.
